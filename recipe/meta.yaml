@@ -1,17 +1,17 @@
 {% set name = "crispy" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c07ec57a8f55d13097b5f9c76fd6aa5ae78e9d7067d4b381c599ef353cd5272a
+  sha256: 0978aaff092d666df605e8208402c6f559c78aba72702d720585ac737247a393
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  number: 0
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
   entry_points:
     - crispy = crispy.__main__:main
