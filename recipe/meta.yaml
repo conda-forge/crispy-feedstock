@@ -19,16 +19,14 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
-    - silx
   run:
     - h5py
-    - matplotlib
+    - matplotlib-base
     - numpy
-    - pyqt
-    - python
-    - silx
+    - python >=2.7
+    - silx-base
 
 test:
   imports:
