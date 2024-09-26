@@ -1,5 +1,5 @@
 {% set name = "crispy" %}
-{% set version = "0.7.4" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0978aaff092d666df605e8208402c6f559c78aba72702d720585ac737247a393
+  sha256: 3330e808cfb536dfa85c47e61a32f39982e854c1086bea849adef38a0d132d5c
 
 build:
   number: 0
