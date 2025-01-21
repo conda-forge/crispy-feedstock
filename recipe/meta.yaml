@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 0978aaff092d666df605e8208402c6f559c78aba72702d720585ac737247a393
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
   entry_points:
@@ -19,16 +19,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
   run:
     - h5py
     - matplotlib-base
     - numpy
-    - python >=2.7
+    - python >={{ python_min }}
     - silx-base
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - crispy
     - crispy.gui
