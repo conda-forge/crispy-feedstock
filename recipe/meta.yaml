@@ -29,7 +29,7 @@ requirements:
     - silx-base
     - pyside6
     - qtawesome
-    - ruamel_yaml
+    - ruamel.yaml
     - xraydb
 
 test:
