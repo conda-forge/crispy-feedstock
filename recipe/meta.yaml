@@ -45,7 +45,7 @@ about:
   home: https://github.com/mretegan/crispy
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE.rst
   summary: Core-Level Spectroscopy Simulations in Python
   doc_url: http://www.esrf.eu/computing/scientific/crispy/
   dev_url: http://www.esrf.eu/computing/scientific/crispy/
