@@ -27,6 +27,10 @@ requirements:
     - numpy
     - python >={{ python_min }}
     - silx-base
+    - pyside6
+    - qtawesome
+    - ruamel_yaml
+    - xraydb
 
 test:
   requires:
