@@ -31,15 +31,11 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - crispy
-    - crispy.gui
-    - crispy.gui.icons
-    - crispy.gui.uis
-    - crispy.modules
-    - crispy.modules.orca
-    - crispy.modules.quanty
-    - crispy.utils
+  commands:
+    - pip check
 
 about:
   home: https://github.com/mretegan/crispy
