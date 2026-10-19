@@ -1,5 +1,5 @@
 {% set name = "crispy" %}
-{% set version = "2026.2" %}
+{% set version = "2026.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 15f23cf982c48b1712bd3a91d23b5cae77884d9ada571cbf944fea60646abaa5
+  sha256: 8bbe69f9b83692947f2780e3cad9d0cce626c25cda027a6d7718f008fff675e6
 
 build:
   number: 0
